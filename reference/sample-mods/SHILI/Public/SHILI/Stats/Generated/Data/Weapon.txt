@@ -2,7 +2,9 @@ new entry "MAG_SHILI_LONGSWORD" <!-- 武器名称 -->
 type "Weapon"					<!-- 数据类型 -->
 using "WPN_Longsword_2"			<!-- 调用WPN_Longsword_2作为模板,具体解释参考同文件夹内Armor.txt第14~49行注释 -->
 data "RootTemplate" "cfc5e90f-49b9-42cd-939b-f10a6742a43e"	<!-- RootTemplate UUID，决定该物品呈现的外观 -->
-data "ValueUUID" "2a854f1f-89a1-4411-aede-028412d6b708"		<!-- Value UUID，用以区分该物品和其他物品 -->
+data "ValueUUID" "2a854f1f-89a1-4411-aede-028412d6b708"		<!-- Value UUID，用以区分该物品和其他物品。
+	【更正】它不是必需品：原版 Weapon 里 258 条没写 ValueUUID 也能用
+	（例如 WPN_Dagger 就没有）。真正必需的是 RootTemplate。 -->
 data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"	<!-- 附魔+1 -->
 data "Boosts" "UnlockSpell(Target_MAG_CommanderStrike);Ability(Charisma, 2)" 	<!-- 装备后生效，解锁 飞行术 的法术/Spell -->
 data "PassivesOnEquip" "MAG_WYRM_Commander_Longsword_Passive"					<!-- 装备后生效，赋予装备者 激励击杀 的被动/Passive -->
@@ -61,3 +63,32 @@ SHILI.xml格式一般如下：
 </contentList>
 
 其中，RootTemplate.lsf中的handle & version 应该与此处的content contentuid & version对应.
+
+<!--
+【重要补充：条件里引用「角色自己」时必须带 context.Source】
+
+    HasStatus('POISONED')                    <- 错：静默失效，无任何报错
+    HasStatus('POISONED', context.Source)    <- 对
+
+  这是最容易踩且最难查的一条：写错不会报错，只是效果永远不生效。
+  原版例证（全部 14 处「条件里用 HasStatus」的规律）：
+      PrimalStrike    : HasStatus('SG_Polymorph_BeastShape', context.Source)
+      Poison_Myrmidon : HasStatus('POISONED', context.Source)
+      MAG_FlexibleArmor_Defense_Passive
+                      : BoostConditions "HasPassive('FightingStyle_Defense', context.Source)"
+  同理适用于 HasPassive。
+
+【重要补充：RootTemplate 的闭环】
+
+  本文件里 RootTemplate 填的 cfc5e90f-49b9-42cd-939b-f10a6742a43e 必须与
+  Public\SHILI\RootTemplates\merged.lsf 里的 MapKey 一致，
+  而那个 lsf 的 Stats 字段又要指回本文件的条目名 MAG_SHILI_LONGSWORD。
+  三者（Stats 的 RootTemplate / lsf 的 MapKey / lsf 的 Stats）必须闭环，
+  断开任何一环物品都创建不出来。
+
+【已知未完成处】
+
+  data "PassivesOnEquip" "MAG_WYRM_Commander_Longsword_Passive"
+  指向的被动**没有随本示例提供定义**，所以实际不会生效。
+  示例演示的是写法，不是可直接运行的完整效果。
+-->

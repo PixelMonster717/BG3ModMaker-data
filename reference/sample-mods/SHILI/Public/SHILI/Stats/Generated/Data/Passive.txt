@@ -1,8 +1,52 @@
 new entry "MAG_Fire_BonusActionOnFireSpell_Passive"	<!-- 被动名称 -->
-type "PassiveData"	<!-- 数据类型 -->
-data "DisplayName" "h882f26e1g5702g4d33g835cgd8aef161b3bb;2"	<!-- 推测应为被动在UI中显示的名称？ -->
-data "Description" "ha52eda16g7787g4edfg8adbg567579ada73c;4"	<!-- 推测应为被动在UI中显示的描述/详情？ -->
-data "Properties" "OncePerAttack"	<!-- 属性，此处为每次攻击 -->
-data "StatsFunctorContext" "OnDamage"	<!-- 触发时机：造成伤害时 -->
-data "Conditions" "(IsSpell() and not IsCantrip()) or IsAttackType(AttackType.MeleeSpellAttack)"	<!-- 适用条件 -->
-data "StatsFunctors" "IF(HasDamageDoneForType(DamageType.Fire)):ApplyStatus(SELF, MAG_BONUS_ACTION, 100, 1);IF(HasDamageDoneForType(DamageType.Fire)):ApplyStatus(SELF, BURNING, 100, 2)"	<!-- 在触发时机满足适用条件时的效果处理方式 -->
+type "PassiveData"	<!-- 数据类型：被动。放在 Passive.txt（文件名随意，游戏按内容解析） -->
+data "DisplayName" "h882f26e1g5702g4d33g835cgd8aef161b3bb;2"	<!-- 本地化 handle，不是文本本身。要做汉化见 Weapon.txt 里 .xml -> .loca 的说明 -->
+data "Description" "ha52eda16g7787g4edfg8adbg567579ada73c;4"	<!-- 同上，描述文本的 handle -->
+data "Properties" "OncePerAttack"	<!-- 被动属性。原版取值 TOP：Highlighted 479 / IsHidden 269 / IsToggled 66 / OncePerAttack 33 / OncePerShortRest 10 -->
+data "StatsFunctorContext" "OnDamage"	<!-- 【触发时机】控制下面的 StatsFunctors。原版取值 TOP：OnDamage 173 / OnAttack 88 / OnDamaged 72 / OnCast 68 / OnCreate 57 / OnAttacked 54 -->
+data "Conditions" "(IsSpell() and not IsCantrip()) or IsAttackType(AttackType.MeleeSpellAttack)"	<!-- 【适用条件】控制 StatsFunctors -->
+
+<!--
+【重要补充：PassiveData 上有两组「时机 + 条件」字段，别混用】
+
+  Boosts          <- 持续加值，用 BoostContext   + BoostConditions
+  StatsFunctors   <- 事件触发的动作，用 StatsFunctorContext + Conditions
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^
+                     本文件用的就是这一组
+
+  两组字段**不能互换**：
+    · BoostContext 共 71 条、BoostConditions 共 63 条，实测 100% 都用在
+      「配 Boosts」的条目上
+    · StatsFunctorContext 共 634 条、Conditions（PassiveData 上）593 条，
+      配 StatsFunctors 使用
+
+  且这四个字段**只能写在 PassiveData 上**——Armor / Weapon 上实测 0 例。
+  所以「装备 + 条件」必须写成两个条目：
+      装备 data "PassivesOnEquip" "某被动"
+      被动 data "BoostContext"/"BoostConditions"/"Boosts"
+
+【重要补充：条件里引用「角色自己」时必须带 context.Source】
+
+  原文缺失的一条关键规则——查原版全部 14 处「条件里用 HasStatus」后发现：
+  检查**角色自己身上**的状态/被动时，一律要写 context.Source，否则**静默失效**：
+
+      HasStatus('POISONED')                    <- 错：不会生效，且无任何报错
+      HasStatus('POISONED', context.Source)    <- 对
+
+  同理适用于 HasPassive：
+      HasPassive('FightingStyle_Defense', context.Source)
+
+  原版例证：
+      PrimalStrike    : HasStatus('SG_Polymorph_BeastShape', context.Source)
+      Poison_Myrmidon : HasStatus('POISONED', context.Source)
+      MAG_FlexibleArmor_Defense_Passive
+                      : BoostConditions "HasPassive('FightingStyle_Defense', context.Source)"
+
+【本文件的一个未完成处】
+
+  Boosts 一栏里提到的 MAG_BONUS_ACTION 用 ApplyStatus 施加，
+  但 MAG_BONUS_ACTION 这个状态**没有随本示例提供定义**，所以实际不会生效。
+  示例只演示了「写法」，不是可直接运行的完整效果。
+-->
+
+data "StatsFunctors" "IF(HasDamageDoneForType(DamageType.Fire)):ApplyStatus(SELF, MAG_BONUS_ACTION, 100, 1);IF(HasDamageDoneForType(DamageType.Fire)):ApplyStatus(SELF, BURNING, 100, 2)"	<!-- 效果本体。IF(条件):动作 的形式，多条用英文分号分隔 -->

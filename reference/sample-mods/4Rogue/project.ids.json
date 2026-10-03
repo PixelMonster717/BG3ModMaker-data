@@ -1,0 +1,7 @@
+{
+  "_comment": "本工程的永久 ID 记录。UUID 与 contentuid 一经分配，永不改变——改了等于换了一个 mod，旧存档会丢失引用。原有的 .loca 已内含全部句柄，故 ContentUIDs 为空。",
+  "ModName": "4Rogue",
+  "ModUUID": "2fe1d40f-4df1-466f-aaef-99d0cb51ae4d",
+  "Version64": 36029237253119790,
+  "ContentUIDs": {}
+}

@@ -51,11 +51,24 @@
 
 | 目录 | 内容 |
 |---|---|
-| `stats-vanilla\` | 5 个模块的 Stats 数据（119 文件 / 9.5 MB）。校验器用它做重名检测，索引 15387 条 |
+| `stats-vanilla\` | 5 个模块的 Stats 数据（115 文件 / 15895 条目 / 104834 行 data）。校验器用它做重名检测 |
 | `root-templates\` | 25914 个原版 RootTemplate 导出（Gustav / GustavDev / Shared / SharedDev） |
-| `sample-mods\` | `SHILI`（含 .pak）、`4Rouger` 两个范例工程 |
-| `tutorials\` | 两份中文教程 PDF、被动技能模板 |
+| `sample-mods\` | 两个范例工程：`SHILI`（含 .pak，带作者手写注释）、`4Rogue`（含 .pak 与完整工程） |
+| `tutorials\` | 两份第三方中文教程（`.docx` / `.pdf` / `.pak`）、**教程文本版**（含 37 张图的 Markdown）、被动技能模板 |
 | `exports\` | `UNI_HUM_ShadowBlade.lsf` / `.lsx` |
+
+**关于 `sample-mods\`**：两个范例都带 `.pak`，可直接解包对照。
+`SHILI` 的源文件里有作者手写的中文注释，本工程已对照 `stats-vanilla` 的实测数据
+**逐条校正**，被更正处标了「【更正】」「【实测补充】」。
+每个范例目录下有 `README.md` 说明它演示了什么、有哪些未完成处。
+
+**关于 `tutorials\教程文本版\`**：原教程的关键内容大量存在于**图片**中，
+纯文字版会丢失信息。故把 `.docx` 转成了 Markdown，**按原文顺序保留了 37 张图片**，
+便于离线阅读与检索。
+
+> [!note] 教程是第三方所写
+> 写于较早版本，部分内容与当前实测不符。
+> 遇到冲突以主库的 `2-工作流\Stats语法与结构.md` 与 `Stats字段字典.md` 为准。
 
 > [!warning] `stats-vanilla` 可能已过时
 > 时间戳为 2024-11/-12，早于当前 Patch 8 + HotFix 10。
