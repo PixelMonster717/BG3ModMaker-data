@@ -55,12 +55,20 @@
 | `root-templates\` | 25914 个原版 RootTemplate 导出（Gustav / GustavDev / Shared / SharedDev） |
 | `sample-mods\` | 两个范例工程：`SHILI`（含 .pak，带作者手写注释）、`4Rogue`（含 .pak 与完整工程） |
 | `tutorials\` | 两份第三方中文教程（`.docx` / `.pdf` / `.pak`）、**教程文本版**（含 37 张图的 Markdown）、被动技能模板 |
+| `equipment-list\` | 作者整理的**原版装备数据库**（12 类约 700 条，Markdown，可直接在 Obsidian 检索） |
 | `exports\` | `UNI_HUM_ShadowBlade.lsf` / `.lsx` |
 
 **关于 `sample-mods\`**：两个范例都带 `.pak`，可直接解包对照。
 `SHILI` 的源文件里有作者手写的中文注释，本工程已对照 `stats-vanilla` 的实测数据
 **逐条校正**，被更正处标了「【更正】」「【实测补充】」。
 每个范例目录下有 `README.md` 说明它演示了什么、有哪些未完成处。
+
+**关于 `equipment-list\`**：作者整理的《博德之门3装备合集》转成的 Markdown，
+12 类约 700 条，含**中文装备名 / 品质 / 穿戴要求 / 效果 / 获取地点 / 获得方式**，
+其中「头冠与头盔」「服装」两类附有 **RootTemplate UUID**（其余待补）。
+另有两张参考表：「异常状态」列出原版状态效果，
+「输出与附加伤害」把效果说明与对应的 **Boost 函数写法**并列——
+这是从效果反查写法最直接的一张表。索引见该目录的 `README.md`。
 
 **关于 `tutorials\教程文本版\`**：原教程的关键内容大量存在于**图片**中，
 纯文字版会丢失信息。故把 `.docx` 转成了 Markdown，**按原文顺序保留了 37 张图片**，
