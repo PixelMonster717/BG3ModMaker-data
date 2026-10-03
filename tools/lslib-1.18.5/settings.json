@@ -1,0 +1,42 @@
+{
+  "GR2": {
+    "InputPath": "",
+    "OutputPath": "",
+    "BatchInputPath": "",
+    "BatchOutputPath": "",
+    "BatchInputFormat": 0,
+    "BatchOutputFormat": 1,
+    "ConformPath": null
+  },
+  "PAK": {
+    "ExtractInputPath": "D:\\BG3汉化mod\\Deadly_Assasin.pak",
+    "ExtractOutputPath": "D:\\BG3汉化mod\\致命刺客解包",
+    "CreateInputPath": "",
+    "CreateOutputPath": "",
+    "CreatePackageVersion": 0,
+    "CreatePackageCompression": 3
+  },
+  "Resources": {
+    "InputPath": "D:\\BG3汉化mod\\newMOD\\ShadowSlayer\\Public\\ShadowSlayer\\Tags\\2f489151-f764-44ed-a0d8-f0ee3c15bac5.lsx",
+    "OutputPath": "D:\\BG3汉化mod\\newMOD\\ShadowSlayer\\Public\\ShadowSlayer\\Tags\\2f489151-f764-44ed-a0d8-f0ee3c15bac5.lsf",
+    "BatchInputPath": "",
+    "BatchOutputPath": "",
+    "BatchInputFormat": 0,
+    "BatchOutputFormat": 2
+  },
+  "VirtualTextures": {
+    "GTSPath": "",
+    "DestinationPath": ""
+  },
+  "Story": {
+    "InputPath": "E:\\ssd e\\Dev\\BG3FULL\\Mods\\GustavDev\\Story\\story.div.osi",
+    "OutputPath": "",
+    "FilterText": "",
+    "FilterMatchCase": false
+  },
+  "Debugging": {
+    "SavePath": ""
+  },
+  "SelectedGame": 4,
+  "Version": "1.18.5"
+}

@@ -1,0 +1,42 @@
+{
+  "GR2": {
+    "InputPath": "",
+    "OutputPath": "",
+    "BatchInputPath": "",
+    "BatchOutputPath": "",
+    "BatchInputFormat": 0,
+    "BatchOutputFormat": 1,
+    "ConformPath": null
+  },
+  "PAK": {
+    "ExtractInputPath": "",
+    "ExtractOutputPath": "",
+    "CreateInputPath": "C:\\Users\\14728\\Desktop\\SHILI",
+    "CreateOutputPath": "C:\\Users\\14728\\Desktop\\SHILI.pak",
+    "CreatePackageVersion": 0,
+    "CreatePackageCompression": 3
+  },
+  "Resources": {
+    "InputPath": "D:\\Administrator\\下载\\#BG3\\66d6cbd5-c231-4fc4-a3b7-80f781b579f7.lsf",
+    "OutputPath": "D:\\Administrator\\下载\\#BG3\\66d6cbd5-c231-4fc4-a3b7-80f781b579f7.lsx",
+    "BatchInputPath": "C:\\Users\\14728\\Desktop\\Merged.lsx",
+    "BatchOutputPath": "C:\\Users\\14728\\Desktop\\Merged.lsf",
+    "BatchInputFormat": 0,
+    "BatchOutputFormat": 0
+  },
+  "VirtualTextures": {
+    "GTSPath": "",
+    "DestinationPath": ""
+  },
+  "Story": {
+    "InputPath": "",
+    "OutputPath": "",
+    "FilterText": "",
+    "FilterMatchCase": false
+  },
+  "Debugging": {
+    "SavePath": ""
+  },
+  "SelectedGame": 4,
+  "Version": "1.8.4"
+}

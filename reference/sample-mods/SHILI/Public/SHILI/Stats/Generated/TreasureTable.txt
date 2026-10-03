@@ -1,0 +1,14 @@
+new treasuretable "TUT_Chest_Potions"
+CanMerge 1
+new subtable "1,1"
+object category "I_CHANG",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_TIAO",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_RAP",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_LANQIU",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_MUSIC",1,0,0,0,0,0,0,0
+
+

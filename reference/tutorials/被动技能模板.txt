@@ -1,0 +1,21 @@
+被动技能模板
+
+外壳
+new entry “名称”
+type “PassiveData”
+data "DisplayName" "h0fc6b397ga695g45e8g9303gd6a4d701bae5;1"
+data "Description" "h31ff92f1gd3a2g43cdg8567gee07fc6e5a04;1"
+data "Icon" "PassiveFeature_ThirstingBlade"
+data "Properties" "IsHidden，HighLighted"
+
+内容/ 功能
+
+boosts：
+data "BoostContext" "OnDamaged;OnDamage；OnAttack；OnAttacked；OnCast；OnRest；OnShortRest；OnAbilityCheck；"
+data "BoostConditions" "not Dead() and not HasStatus（‘’）and IsOffHandSlotEmpty()"
+data "Boosts" "CriticalDamageOnHit()；Advantage(AttackRoll)；CharacterWeaponDamage(1d4, Necrotic)；ReduceCriticalAttackThreshold(1)"
+
+Funtors：
+data “StatsFunctorContext" "OnAttack;OnStatusRemoved；OnStatusApplied"
+data "Conditions" " IsWeaponAttack() and IsMiss() and StatusId('INITIAL_ATTACK_STALKERS_FLURRY_TECHNICAL'))"
+data "StatsFunctors" "ApplyStatus(SELF,STALKERS_FLURRY_Q,100,1)；RestoreResource(SELF, Movement, 100%, 0)；DealDamage(1d4, Psychic)”
