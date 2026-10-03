@@ -17,8 +17,8 @@
     "CreatePackageCompression": 3
   },
   "Resources": {
-    "InputPath": "D:\\BG3汉化mod\\newMOD\\ShadowSlayer\\Public\\ShadowSlayer\\Tags\\2f489151-f764-44ed-a0d8-f0ee3c15bac5.lsx",
-    "OutputPath": "D:\\BG3汉化mod\\newMOD\\ShadowSlayer\\Public\\ShadowSlayer\\Tags\\2f489151-f764-44ed-a0d8-f0ee3c15bac5.lsf",
+    "InputPath": "D:\\Administrator\\Documents\\BG3ModMaker-data\\reference\\sample-mods\\SHILI\\Public\\SHILI\\RootTemplates\\merged.lsf",
+    "OutputPath": "D:\\Administrator\\Documents\\BG3ModMaker-data\\reference\\sample-mods\\SHILI\\Public\\SHILI\\RootTemplates\\merged.lsx",
     "BatchInputPath": "",
     "BatchOutputPath": "",
     "BatchInputFormat": 0,

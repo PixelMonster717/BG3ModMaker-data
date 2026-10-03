@@ -1,12 +1,49 @@
-new entry "MAG_Infernal_Plate_Armor"  
-type "Armor"
-using "ARM_Plate_Body_2"
-data "RootTemplate" "7ae705fd-1cfd-4482-a584-d2e68f9c1262"
-data "ArmorClass" "21"
-data "ValueUUID" "a57433fc-8be8-4efb-ac6b-a625b3bdcd18"
-data "Rarity" "Legendary"
-data "Boosts" "UnlockSpell(Projectile_MAG_Legendary_Chromatic_Fireball)"
-data "PassivesOnEquip" "MAG_Fire_BonusActionOnFireSpell_Passive"
-data "Unique" "1"
+new entry "MAG_Infernal_Plate_Armor" 	<!-- 装备名称 -->
+type "Armor"							<!-- 数据类型 -->
+using "ARM_Plate_Body_2"				<!-- 调用ARM_Plate_Body_2作为模板,具体解释参考本文件第14~49行注释 -->
+data "RootTemplate" "7ae705fd-1cfd-4482-a584-d2e68f9c1262"	<!-- RootTemplate UUID，决定该物品呈现的外观 -->
+data "ArmorClass" "21"	<!-- 护甲等级 -->
+data "ValueUUID" "a57433fc-8be8-4efb-ac6b-a625b3bdcd18"		<!-- Value UUID，用以区分该物品和其他物品 -->
+data "Rarity" "Legendary"	<!-- 稀有度 -->
+data "Boosts" "UnlockSpell(Projectile_MAG_Legendary_Chromatic_Fireball)"	<!-- 装备后生效，解锁 火球术 的法术/Spell -->
+data "PassivesOnEquip" "MAG_Fire_BonusActionOnFireSpell_Passive"	<!-- 装备后生效，赋予装备者 火焰回收 的被动/Passive -->
+data "Unique" "1"	
 data "MinLevel" "1"
-data "Proficiency Group" ""
+data "Proficiency Group" ""	<!-- 熟练项要求 -->
+
+<!-- 
+
+本文件调用的ARM_Plate_Body_2如下，
+
+new entry "ARM_Plate_Body_2"
+type "Armor"
+using "ARM_Plate_Body"
+data "RootTemplate" "fdb8ce53-51dc-4ccb-9e29-d1d99040e60b"
+data "ArmorClass" "20"
+data "ValueUUID" "f0307da3-feb7-40b0-bd62-18eea9167021"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "ARM_ExceptionalPlate_2_Passive"
+
+可以发现差异有RootTemplate UUID / Value UUID不同，即外观/物品在识别中视为不同的物品；ArmorClass/Rarity不同，并且Passive也少。
+那么可以知道，MAG_Infernal_Plate_Armor（子类）是在ARM_Plate_Body_2（父类）的基础上修改的：外观套用了另一个RootTemplate的内容，并且根据Value UUID差异来说明二者不是同一样东西。并且修改了护甲等级/稀有度，增加了被动。除此之外的其他一切均“继承”自ARM_Plate_Body_2的配置。
+
+但是也可以看到ARM_Plate_Body_2也调用了ARM_Plate_Body如下，
+
+new entry "ARM_Plate_Body"
+type "Armor"
+using "_Body"
+data "RootTemplate" "95b4e2c4-759a-4d33-a2d1-4e0ee6ed4f29"
+data "ArmorClass" "18"
+data "ValueLevel" "10"
+data "Weight" "20"
+data "Boosts" "Disadvantage(Skill,Stealth)"
+data "ArmorType" "Plate"
+data "MinAmount" "1"
+data "MaxAmount" "1"
+data "Priority" "1"
+data "MinLevel" "7"
+data "Proficiency Group" "HeavyArmor"
+
+那么可以由之前的结论知道，除了存在差异的地方，ARM_Plate_Body_2的其余所有一切均“继承”自ARM_Plate_Body。因此有些部分不必再重新定义，比如Proficiency Group/Weight等字段。
+
+-->

@@ -1,16 +1,29 @@
 # BG3ModMaker-data
 
-**BG3 Mod 制作工具链与原版参考数据。** 这是主库 [BG3](https://github.com/PixelMonster717/BG3)
-的配套数据仓库。
+**BG3 Mod 制作工具链与原版参考数据。**
+
+## 姊妹仓库
+
+工程按「可复用工具 / 可复用数据 / 各 Mod 产出」分三层，每层一个独立仓库：
+
+| 仓库 | 内容 | 本地目录 |
+|---|---|---|
+| [BG3ModMaker](https://github.com/PixelMonster717/BG3ModMaker) | 工具与知识库（规范、脚本、模板、Vault） | `…\Documents\BG3ModMaker\` |
+| **BG3ModMaker-data**（本仓库） | 工具链与原版参考数据 | `…\Documents\BG3ModMaker-data\` |
+| [BG3-Mod-4RogueSet](https://github.com/PixelMonster717/BG3-Mod-4RogueSet) | 游荡者套装的产出（工程 + 文档 + 迭代记录） | `…\Documents\RogueSet\` |
+
+> [!warning] 仓库名与本地目录名不一定相同
+> 例如 RogueSet 的 GitHub 仓库名是 `BG3-Mod-4RogueSet`，本地目录是 `RogueSet`。
+> 主库的脚本按**本地相对位置**引用本仓库（两者必须是同级目录），与仓库名无关。
 
 ## 为什么单独一个仓库
 
 把「体积大但几乎不变」的内容与「体积小但每天迭代」的文档分开：
 
-| | 主库 BG3 | 本仓库 |
+| | 主库 BG3ModMaker | 本仓库 |
 |---|---|---|
 | 内容 | 文档、Vault、脚本、模板 | 工具链、原版参考数据 |
-| 体积 | 0.18 MB | 223 MB |
+| 体积 | 0.2 MB | 约 220 MB |
 | 迭代频率 | 每天 | 几乎不变 |
 
 合在一起会导致每次改一行文档都要背着 223 MB 历史，clone 与 push 都变慢。

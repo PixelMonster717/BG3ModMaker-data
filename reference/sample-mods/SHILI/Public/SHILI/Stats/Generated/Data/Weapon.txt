@@ -1,9 +1,63 @@
-new entry "MAG_SHILI_LONGSWORD"
-type "Weapon"
-using "WPN_Longsword_2"
-data "RootTemplate" "cfc5e90f-49b9-42cd-939b-f10a6742a43e"
-data "ValueUUID" "2a854f1f-89a1-4411-aede-028412d6b708"
-data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"
-data "Boosts" "UnlockSpell(Target_MAG_CommanderStrike);Ability(Charisma, 2)"
-data "PassivesOnEquip" "MAG_WYRM_Commander_Longsword_Passive"
+new entry "MAG_SHILI_LONGSWORD" <!-- 武器名称 -->
+type "Weapon"					<!-- 数据类型 -->
+using "WPN_Longsword_2"			<!-- 调用WPN_Longsword_2作为模板,具体解释参考同文件夹内Armor.txt第14~49行注释 -->
+data "RootTemplate" "cfc5e90f-49b9-42cd-939b-f10a6742a43e"	<!-- RootTemplate UUID，决定该物品呈现的外观 -->
+data "ValueUUID" "2a854f1f-89a1-4411-aede-028412d6b708"		<!-- Value UUID，用以区分该物品和其他物品 -->
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical)"	<!-- 附魔+1 -->
+data "Boosts" "UnlockSpell(Target_MAG_CommanderStrike);Ability(Charisma, 2)" 	<!-- 装备后生效，解锁 飞行术 的法术/Spell -->
+data "PassivesOnEquip" "MAG_WYRM_Commander_Longsword_Passive"					<!-- 装备后生效，赋予装备者 激励击杀 的被动/Passive -->
 data "Unique" "1"
+
+<!-- 必要说明 
+
+想让一件可互动物品真正能在游戏中"呈现"，Mod编写除了要有Stats内的内容，RootTemplate文件夹中也应该包含对应该物品的RootTemplate UUID.lsf文件。（被动/状态等无需该文件）
+
+以本文件内定义的武器所需关联的RootTemplate UUID.lsf文件为例，D:\Administrator\Documents\BG3ModMaker-data\reference\sample-mods\SHILI\Public\SHILI\RootTemplates\merged.lsf	//本应命名为cfc5e90f-49b9-42cd-939b-f10a6742a43e.lsf（但对于小型MOD更方便的是对应物品名称）
+.lsf无法直接编辑，一般是.lsx形式编辑并封装为.lsf，其中包含的内容如下：
+
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="320" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="cfc5e90f-49b9-42cd-939b-f10a6742a43e" />	// MapKey行的Value对应该物品的RootTemplate UUID，此处为cfc5e90f-49b9-42cd-939b-f10a6742a43e.
+					<attribute id="Name" type="LSString" value="MAG_SHILI_LONGSWORD" />							// Name/Stats行的value对应该物品的武器名称，此处为MAG_SHILI_LONGSWORD. 
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="e3b2adb6-7493-466e-9c65-4281fb74e83f" />
+					<attribute id="VisualTemplate" type="FixedString" value="e734c772-43ca-d6d7-03ed-65e0de2fff02" />
+					<attribute id="DisplayName" type="TranslatedString" handle="210e961f-c30d-4a58-ad48-62c9134a1aa0" version="1" />	//DisplayName行handle&version对应该物品在UI中呈现的名称文本（Handle本质亦是一种UUID），对应文本位于D:\Administrator\Documents\BG3ModMaker-data\reference\sample-mods\SHILI\Localization\Chinese\SHILI.loca
+					<attribute id="Stats" type="FixedString" value="MAG_SHILI_LONGSWORD" />						// Name/Stats行的value对应该物品的武器名称，此处为MAG_SHILI_LONGSWORD. 
+					<attribute id="Description" type="TranslatedString" handle="6affc8d5-4ac5-47bf-a2be-02a84351c2a6" version="1" />	//Description行handle&version对应该物品在UI中呈现的描述文本（Handle本质亦是一种UUID），对应文本位于D:\Administrator\Documents\BG3ModMaker-data\reference\sample-mods\SHILI\Localization\Chinese\SHILI.loca
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="" version="0" />
+					<children>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="983087c8-c9d3-4a87-69bc-f9659632c866" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>
+
+
+-------
+SHILI.loca无法直接编辑，一般是.xml形式编辑并封装为.loca
+SHILI.xml格式一般如下：
+
+<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+	<content contentuid="iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii" version="1">唱</content>
+	<content contentuid="kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk" version="1">跳</content>
+	<content contentuid="uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu" version="1">rap</content>
+	<content contentuid="nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn" version="1">篮球</content>
+</contentList>
+
+其中，RootTemplate.lsf中的handle & version 应该与此处的content contentuid & version对应.
