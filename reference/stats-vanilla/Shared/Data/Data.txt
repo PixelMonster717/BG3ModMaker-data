@@ -638,3 +638,11 @@ key "MoveToTargetCloseEnoughMin","0.5"
 
 key "MoveToTargetCloseEnoughMax","3.5"
 
+key "MultiplyEffectsByDurationTurnLimit","20"
+
+key "InterruptFarDistance","30"
+
+key "SpellZoneSurfaceGrowIntervalDefault","1"
+
+key "SpellZoneSurfaceGrowStepDefault","100"
+

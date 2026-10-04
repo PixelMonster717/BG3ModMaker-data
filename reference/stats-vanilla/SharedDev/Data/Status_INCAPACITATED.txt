@@ -54,7 +54,7 @@ data "OnRemoveFunctors" ""
 new entry "SLEEPING_EYEBITE"
 type "StatusData"
 data "StatusType" "INCAPACITATED"
-using "SLEEPING"
+using "SLEEPING_MAGICAL"
 data "StatusPropertyFlags" "OverheadOnTurn;InitiateCombat;BringIntoCombat"
 
 new entry "CONFUSION_SKIP"

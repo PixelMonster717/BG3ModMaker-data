@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="0" revision="10" build="200"/>
+    <version major="4" minor="5" revision="0" build="600"/>
     <region id="Crime">
         <node id="root">
             <children>
@@ -598,7 +598,7 @@
                             <attribute id="Dialog" type="LSString" value="GOB_Checkpoint_TopCliffWarning_c0b3d584-3c23-c34b-9baa-73fcf760e477"/>
                             <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_OsirisTrespassReaction"/>
                             <attribute id="Priority" type="int32" value="1"/>
-                            <attribute id="ReactionCategory_Tag" type="FixedString" value="GUARD"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="ACT1_GOB_CLIFF_GUARD"/>
                             <attribute id="SecondarySensibleAction" type="FixedString" value="Crime_Draw"/>
                             <attribute id="Tension" type="uint8" value="0"/>
                             <children>
@@ -1580,12 +1580,15 @@
                     </children>
                 </node>
                 <node id="Crime">
-                    <attribute id="Audible" type="uint8" value="2"/>
+                    <attribute id="Audible" type="uint8" value="0"/>
+                    <attribute id="AudibleRange" type="float" value="10"/>
+                    <attribute id="Continuous" type="uint8" value="0"/>
                     <attribute id="CreatesCrimescene" type="uint8" value="1"/>
                     <attribute id="CrimeType" type="LSString" value="DEN_GroveConflict_IdolStolen"/>
+                    <attribute id="DetectionRange" type="float" value="20"/>
                     <attribute id="InterrogateDialog" type="LSString" value="DEN_NGB_GroveConflict_IdolCrime_c2aa2d31-0297-3f43-3baa-0506dea663f4"/>
+                    <attribute id="Lifetime" type="float" value="60"/>
                     <attribute id="MaxInvestigators" type="int32" value="4"/>
-                    <attribute id="Parent" type="FixedString" value="Steal"/>
                     <attribute id="SoundEvent" type="FixedString" value="UI_CrimeSystem_Steal"/>
                     <attribute id="TensionWeight" type="int32" value="10"/>
                     <children>

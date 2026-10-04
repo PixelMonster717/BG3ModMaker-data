@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="3" revision="0" build="200"/>
+    <version major="4" minor="6" revision="0" build="1"/>
     <region id="Crime">
         <node id="root">
             <children>
@@ -20064,7 +20064,7 @@
                     <children>
                         <node id="CrimeAction">
                             <attribute id="Dialog" type="LSString" value="GEB_Attack_80d78319-8d61-53c6-053c-c40b8657892f"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Assault_f4b128e9-8662-fa14-07f5-9a98dd856763"/>
                             <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_OsirisReaction"/>
                             <attribute id="Priority" type="int32" value="100"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="NOT_MESSING_AROUND"/>
@@ -20092,8 +20092,8 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_Attack_780d4d51-f832-5144-1ead-8a3a97946f3d"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Assault_f4b128e9-8662-fa14-07f5-9a98dd856763"/>
                             <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_AttackWithOptionalAD"/>
                             <attribute id="Priority" type="int32" value="100"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="NOT_MESSING_AROUND"/>
@@ -20128,7 +20128,7 @@
                         </node>
                         <node id="CrimeAction">
                             <attribute id="Dialog" type="LSString" value="GEB_Arrest_fabc5060-4331-61ef-a99e-f836fbed25bc"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Assault_f4b128e9-8662-fa14-07f5-9a98dd856763"/>
                             <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_OsirisArrest"/>
                             <attribute id="Priority" type="int32" value="200"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="GUARD"/>
@@ -20156,8 +20156,8 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_Attack_780d4d51-f832-5144-1ead-8a3a97946f3d"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Assault_f4b128e9-8662-fa14-07f5-9a98dd856763"/>
                             <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_AttackWithOptionalAD"/>
                             <attribute id="Priority" type="int32" value="200"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="GUARD"/>
@@ -20192,7 +20192,7 @@
                         </node>
                         <node id="CrimeAction">
                             <attribute id="Dialog" type="LSString" value="GEB_Attack_80d78319-8d61-53c6-053c-c40b8657892f"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Assault_f4b128e9-8662-fa14-07f5-9a98dd856763"/>
                             <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_OsirisReaction"/>
                             <attribute id="Priority" type="int32" value="700"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="BADASSCIVILIAN"/>
@@ -20220,8 +20220,8 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_Attack_780d4d51-f832-5144-1ead-8a3a97946f3d"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Assault_f4b128e9-8662-fa14-07f5-9a98dd856763"/>
                             <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_AttackWithOptionalAD"/>
                             <attribute id="Priority" type="int32" value="700"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="BADASSCIVILIAN"/>
@@ -20317,7 +20317,7 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_Attack_780d4d51-f832-5144-1ead-8a3a97946f3d"/>
                             <attribute id="InvestigationKind" type="uint8" value="9"/>
                             <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
                             <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_AttackWithOptionalAD"/>
@@ -20559,9 +20559,9 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_Noticed_AnimalAttackedAnimal_11687f74-c7c2-eb34-4155-7a18109460a0"/>
                             <attribute id="InvestigationKind" type="uint8" value="1"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_AnimalAttackedAnimal_11687f74-c7c2-eb34-4155-7a18109460a0"/>
                             <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_Flee"/>
                             <attribute id="Priority" type="int32" value="1100"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="BEAST"/>
@@ -20596,6 +20596,7 @@
                         <node id="CrimeAction">
                             <attribute id="Dialog" type="LSString" value="GEB_AD_Noticed_AnimalAttackedAnimal_11687f74-c7c2-eb34-4155-7a18109460a0"/>
                             <attribute id="InvestigationKind" type="uint8" value="9"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_AnimalAttackedAnimal_11687f74-c7c2-eb34-4155-7a18109460a0"/>
                             <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_AttackWithOptionalAD"/>
                             <attribute id="Priority" type="int32" value="875"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="AGGRESSIVEBEAST"/>
@@ -20725,12 +20726,420 @@
                                 </node>
                             </children>
                         </node>
+                        <node id="Properties">
+                            <children>
+                                <node id="Property">
+                                    <attribute id="Properties" type="guid" value="54bd8dce-9b1b-42f0-bca2-57ba21ad81a4"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <node id="Crime">
+                    <attribute id="CrimeType" type="LSString" value="Polymorphed_Saved"/>
+                    <attribute id="Parent" type="FixedString" value="Polymorphed"/>
+                    <children>
+                        <node id="CrimeAction">
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="Parent" type="FixedString" value="NOT_MESSING_AROUND"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="NOT_MESSING_AROUND"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="Parent" type="FixedString" value="GUARD"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="GUARD"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="Parent" type="FixedString" value="BADASSCIVILIAN"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="BADASSCIVILIAN"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="Parent" type="FixedString" value="GOBLIN_KID"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="GOBLIN_KID"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="Parent" type="FixedString" value="CIVILIAN"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="CIVILIAN"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="Parent" type="FixedString" value="KID"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="KID"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
                     </children>
                 </node>
                 <node id="Crime">
                     <attribute id="CrimeType" type="LSString" value="Charmed"/>
                     <attribute id="InterrogateDialog" type="LSString" value="NGB_Interrogation_Charmed_fca3d21b-a901-014d-06b9-1051d6015bb6"/>
                     <attribute id="Parent" type="FixedString" value="Polymorphed"/>
+                    <children>
+                        <node id="CrimeAction">
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Assault_f4b128e9-8662-fa14-07f5-9a98dd856763"/>
+                            <attribute id="Parent" type="FixedString" value="NOT_MESSING_AROUND"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="NOT_MESSING_AROUND"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Assault_f4b128e9-8662-fa14-07f5-9a98dd856763"/>
+                            <attribute id="Parent" type="FixedString" value="NOT_MESSING_AROUND"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="NOT_MESSING_AROUND"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="0"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Assault_f4b128e9-8662-fa14-07f5-9a98dd856763"/>
+                            <attribute id="Parent" type="FixedString" value="GUARD"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="GUARD"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Assault_f4b128e9-8662-fa14-07f5-9a98dd856763"/>
+                            <attribute id="Parent" type="FixedString" value="GUARD"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="GUARD"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="0"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Assault_f4b128e9-8662-fa14-07f5-9a98dd856763"/>
+                            <attribute id="Parent" type="FixedString" value="BADASSCIVILIAN"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="BADASSCIVILIAN"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Assault_f4b128e9-8662-fa14-07f5-9a98dd856763"/>
+                            <attribute id="Parent" type="FixedString" value="BADASSCIVILIAN"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="BADASSCIVILIAN"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="0"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="Parent" type="FixedString" value="GOBLIN_KID"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="GOBLIN_KID"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="Parent" type="FixedString" value="NOT_MESSING_AROUND"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="NOT_MESSING_AROUND"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="Parent" type="FixedString" value="GUARD"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="GUARD"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="Parent" type="FixedString" value="BADASSCIVILIAN"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="BADASSCIVILIAN"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="Parent" type="FixedString" value="GOBLIN_KID"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="GOBLIN_KID"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="Parent" type="FixedString" value="CIVILIAN"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="CIVILIAN"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_AssaultZeroDamage_bc3748df-54aa-f777-795e-c2a07167359c"/>
+                            <attribute id="Parent" type="FixedString" value="KID"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="KID"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
                 </node>
                 <node id="Crime">
                     <attribute id="CrimeType" type="LSString" value="Paralyzed"/>
@@ -20738,9 +21147,9 @@
                     <attribute id="TensionWeight" type="int32" value="40"/>
                     <children>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
                             <attribute id="Parent" type="FixedString" value="NOT_MESSING_AROUND"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="NOT_MESSING_AROUND"/>
+                            <attribute id="StopsAndInterruptsCrimes" type="uint8" value="1"/>
                             <attribute id="Tension" type="uint8" value="0"/>
                             <children>
                                 <node id="TargetDialogueFlags">
@@ -20753,10 +21162,7 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
                             <attribute id="Parent" type="FixedString" value="NOT_MESSING_AROUND"/>
-                            <attribute id="Priority" type="int32" value="100"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="NOT_MESSING_AROUND"/>
                             <attribute id="StopsAndInterruptsCrimes" type="uint8" value="1"/>
                             <attribute id="Tension" type="uint8" value="0"/>
@@ -20777,10 +21183,7 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_Arrest_fabc5060-4331-61ef-a99e-f836fbed25bc"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
                             <attribute id="Parent" type="FixedString" value="GUARD"/>
-                            <attribute id="Priority" type="int32" value="200"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="GUARD"/>
                             <attribute id="StopsAndInterruptsCrimes" type="uint8" value="1"/>
                             <attribute id="Tension" type="uint8" value="0"/>
@@ -20795,10 +21198,7 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
                             <attribute id="Parent" type="FixedString" value="GUARD"/>
-                            <attribute id="Priority" type="int32" value="200"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="GUARD"/>
                             <attribute id="StopsAndInterruptsCrimes" type="uint8" value="1"/>
                             <attribute id="Tension" type="uint8" value="0"/>
@@ -20819,10 +21219,7 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_Arrest_fabc5060-4331-61ef-a99e-f836fbed25bc"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
                             <attribute id="Parent" type="FixedString" value="BADASSCIVILIAN"/>
-                            <attribute id="Priority" type="int32" value="700"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="BADASSCIVILIAN"/>
                             <attribute id="StopsAndInterruptsCrimes" type="uint8" value="1"/>
                             <attribute id="Tension" type="uint8" value="0"/>
@@ -20837,10 +21234,7 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
                             <attribute id="Parent" type="FixedString" value="BADASSCIVILIAN"/>
-                            <attribute id="Priority" type="int32" value="700"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="BADASSCIVILIAN"/>
                             <attribute id="StopsAndInterruptsCrimes" type="uint8" value="1"/>
                             <attribute id="Tension" type="uint8" value="0"/>
@@ -20862,7 +21256,6 @@
                         </node>
                         <node id="CrimeAction">
                             <attribute id="Parent" type="FixedString" value="CONSTRUCT"/>
-                            <attribute id="Priority" type="int32" value="850"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="CONSTRUCT"/>
                             <attribute id="StopsAndInterruptsCrimes" type="uint8" value="1"/>
                             <attribute id="Tension" type="uint8" value="0"/>
@@ -20878,7 +21271,6 @@
                         </node>
                         <node id="CrimeAction">
                             <attribute id="Parent" type="FixedString" value="CONSTRUCT"/>
-                            <attribute id="Priority" type="int32" value="850"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="CONSTRUCT"/>
                             <attribute id="StopsAndInterruptsCrimes" type="uint8" value="1"/>
                             <attribute id="Tension" type="uint8" value="0"/>
@@ -20899,10 +21291,7 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
                             <attribute id="Parent" type="FixedString" value="GOBLIN_KID"/>
-                            <attribute id="Priority" type="int32" value="850"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="GOBLIN_KID"/>
                             <attribute id="StopsAndInterruptsCrimes" type="uint8" value="1"/>
                             <attribute id="Tension" type="uint8" value="0"/>
@@ -20923,10 +21312,7 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
                             <attribute id="Parent" type="FixedString" value="NOT_MESSING_AROUND"/>
-                            <attribute id="Priority" type="int32" value="200"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="NOT_MESSING_AROUND"/>
                             <attribute id="Tension" type="uint8" value="0"/>
                             <children>
@@ -20946,10 +21332,7 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
                             <attribute id="Parent" type="FixedString" value="GUARD"/>
-                            <attribute id="Priority" type="int32" value="200"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="GUARD"/>
                             <attribute id="Tension" type="uint8" value="0"/>
                             <children>
@@ -20969,10 +21352,7 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
                             <attribute id="Parent" type="FixedString" value="BADASSCIVILIAN"/>
-                            <attribute id="Priority" type="int32" value="700"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="BADASSCIVILIAN"/>
                             <attribute id="Tension" type="uint8" value="0"/>
                             <children>
@@ -20992,10 +21372,7 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
                             <attribute id="Parent" type="FixedString" value="GOBLIN_KID"/>
-                            <attribute id="Priority" type="int32" value="850"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="GOBLIN_KID"/>
                             <attribute id="Tension" type="uint8" value="0"/>
                             <children>
@@ -21015,10 +21392,9 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
                             <attribute id="NoticedAD" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
                             <attribute id="Parent" type="FixedString" value="CIVILIAN"/>
-                            <attribute id="Priority" type="int32" value="900"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="CIVILIAN"/>
                             <attribute id="Tension" type="uint8" value="0"/>
                             <children>
@@ -21041,7 +21417,6 @@
                             <attribute id="Dialog" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
                             <attribute id="NoticedAD" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
                             <attribute id="Parent" type="FixedString" value="KID"/>
-                            <attribute id="Priority" type="int32" value="1000"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="KID"/>
                             <attribute id="Tension" type="uint8" value="0"/>
                             <children>
@@ -21061,10 +21436,7 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
                             <attribute id="Parent" type="FixedString" value="BEAST"/>
-                            <attribute id="Priority" type="int32" value="1100"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="BEAST"/>
                             <attribute id="Tension" type="uint8" value="0"/>
                             <children>
@@ -21084,9 +21456,7 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
                             <attribute id="Parent" type="FixedString" value="AGGRESSIVEBEAST"/>
-                            <attribute id="Priority" type="int32" value="875"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="AGGRESSIVEBEAST"/>
                             <attribute id="StopsAndInterruptsCrimes" type="uint8" value="1"/>
                             <attribute id="Tension" type="uint8" value="0"/>
@@ -21108,7 +21478,6 @@
                         </node>
                         <node id="CrimeAction">
                             <attribute id="Parent" type="FixedString" value="MONSTER"/>
-                            <attribute id="Priority" type="int32" value="875"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="MONSTER"/>
                             <attribute id="StopsAndInterruptsCrimes" type="uint8" value="1"/>
                             <attribute id="Tension" type="uint8" value="0"/>
@@ -21129,9 +21498,7 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_UND_MyconidCircle_Crimes_03ae7a90-8857-cb30-0399-7dc606f14f9b"/>
                             <attribute id="Parent" type="FixedString" value="MYCONID"/>
-                            <attribute id="Priority" type="int32" value="90"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="MYCONID"/>
                             <attribute id="StopsAndInterruptsCrimes" type="uint8" value="1"/>
                             <attribute id="Tension" type="uint8" value="0"/>
@@ -21150,7 +21517,6 @@
                         </node>
                         <node id="CrimeAction">
                             <attribute id="Parent" type="FixedString" value="MYCONID"/>
-                            <attribute id="Priority" type="int32" value="90"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="MYCONID"/>
                             <attribute id="StopsAndInterruptsCrimes" type="uint8" value="1"/>
                             <attribute id="Tension" type="uint8" value="0"/>
@@ -21308,6 +21674,7 @@
                         <node id="CrimeAction">
                             <attribute id="Dialog" type="LSString" value="GEB_AD_CallForHelp_86d42165-a621-b656-e97d-fc68b6240de9"/>
                             <attribute id="InvestigationKind" type="uint8" value="6"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_CallForHelp_86d42165-a621-b656-e97d-fc68b6240de9"/>
                             <attribute id="Parent" type="FixedString" value="CIVILIAN"/>
                             <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_CallHelpFlee"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="CIVILIAN"/>
@@ -21332,6 +21699,7 @@
                         <node id="CrimeAction">
                             <attribute id="Dialog" type="LSString" value="GEB_AD_CallForHelp_86d42165-a621-b656-e97d-fc68b6240de9"/>
                             <attribute id="InvestigationKind" type="uint8" value="6"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_CallForHelp_86d42165-a621-b656-e97d-fc68b6240de9"/>
                             <attribute id="Parent" type="FixedString" value="KID"/>
                             <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_CallHelpFlee"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="KID"/>
@@ -21461,6 +21829,9 @@
                                 </node>
                                 <node id="Property">
                                     <attribute id="Properties" type="guid" value="f18ff657-d522-448a-bcbf-866604ed6423"/>
+                                </node>
+                                <node id="Property">
+                                    <attribute id="Properties" type="guid" value="54bd8dce-9b1b-42f0-bca2-57ba21ad81a4"/>
                                 </node>
                             </children>
                         </node>
@@ -21811,6 +22182,9 @@
                                 <node id="Property">
                                     <attribute id="Properties" type="guid" value="f18ff657-d522-448a-bcbf-866604ed6423"/>
                                 </node>
+                                <node id="Property">
+                                    <attribute id="Properties" type="guid" value="54bd8dce-9b1b-42f0-bca2-57ba21ad81a4"/>
+                                </node>
                             </children>
                         </node>
                     </children>
@@ -21824,12 +22198,12 @@
                     <attribute id="DetectionRange" type="float" value="20"/>
                     <attribute id="Lifetime" type="float" value="20"/>
                     <attribute id="MaxInvestigators" type="int32" value="3"/>
-                    <attribute id="TensionWeight" type="int32" value="9"/>
+                    <attribute id="TensionWeight" type="int32" value="40"/>
                     <children>
                         <node id="CrimeAction">
                             <attribute id="Dialog" type="LSString" value="GEB_Attack_80d78319-8d61-53c6-053c-c40b8657892f"/>
                             <attribute id="InvestigationKind" type="uint8" value="4"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Assault_f4b128e9-8662-fa14-07f5-9a98dd856763"/>
                             <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_OsirisReaction"/>
                             <attribute id="Priority" type="int32" value="100"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="NOT_MESSING_AROUND"/>
@@ -21857,8 +22231,8 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="NGB_AD_Noticed_SummonAssault_01348e91-1528-218a-9346-0c498a52bea7"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_Attack_780d4d51-f832-5144-1ead-8a3a97946f3d"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Assault_f4b128e9-8662-fa14-07f5-9a98dd856763"/>
                             <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_AttackWithOptionalAD"/>
                             <attribute id="Priority" type="int32" value="100"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="NOT_MESSING_AROUND"/>
@@ -21893,7 +22267,7 @@
                         </node>
                         <node id="CrimeAction">
                             <attribute id="Dialog" type="LSString" value="NGB_Arrest_fabc5060-4331-61ef-a99e-f836fbed25bc"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Assault_f4b128e9-8662-fa14-07f5-9a98dd856763"/>
                             <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_OsirisArrest"/>
                             <attribute id="Priority" type="int32" value="200"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="GUARD"/>
@@ -21921,8 +22295,8 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_AD_Noticed_SummonAssault_01348e91-1528-218a-9346-0c498a52bea7"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_Attack_780d4d51-f832-5144-1ead-8a3a97946f3d"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Assault_f4b128e9-8662-fa14-07f5-9a98dd856763"/>
                             <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_AttackWithOptionalAD"/>
                             <attribute id="Priority" type="int32" value="200"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="GUARD"/>
@@ -21957,7 +22331,7 @@
                         </node>
                         <node id="CrimeAction">
                             <attribute id="Dialog" type="LSString" value="GEB_Attack_80d78319-8d61-53c6-053c-c40b8657892f"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Assault_f4b128e9-8662-fa14-07f5-9a98dd856763"/>
                             <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_OsirisReaction"/>
                             <attribute id="Priority" type="int32" value="700"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="BADASSCIVILIAN"/>
@@ -21985,8 +22359,8 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_AD_Noticed_SummonAssault_01348e91-1528-218a-9346-0c498a52bea7"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_Attack_780d4d51-f832-5144-1ead-8a3a97946f3d"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Assault_f4b128e9-8662-fa14-07f5-9a98dd856763"/>
                             <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_AttackWithOptionalAD"/>
                             <attribute id="Priority" type="int32" value="700"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="BADASSCIVILIAN"/>
@@ -22080,8 +22454,8 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_AD_Noticed_SummonAssault_01348e91-1528-218a-9346-0c498a52bea7"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_Attack_780d4d51-f832-5144-1ead-8a3a97946f3d"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Assault_f4b128e9-8662-fa14-07f5-9a98dd856763"/>
                             <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_AttackWithOptionalAD"/>
                             <attribute id="Priority" type="int32" value="850"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="GOBLIN_KID"/>
@@ -22115,9 +22489,9 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_AD_Noticed_SummonAssault_01348e91-1528-218a-9346-0c498a52bea7"/>
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
                             <attribute id="InvestigationKind" type="uint8" value="1"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
                             <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_CallHelpFlee"/>
                             <attribute id="Priority" type="int32" value="900"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="CIVILIAN"/>
@@ -22150,9 +22524,9 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
-                            <attribute id="Dialog" type="LSString" value="GEB_AD_Noticed_SummonAssault_01348e91-1528-218a-9346-0c498a52bea7"/>
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
                             <attribute id="InvestigationKind" type="uint8" value="1"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Help_Assault_1176dad8-4cc6-570a-b765-506c2b6eefa8"/>
                             <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_CallHelpFlee"/>
                             <attribute id="Priority" type="int32" value="1000"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="KID"/>
@@ -22186,7 +22560,7 @@
                         </node>
                         <node id="CrimeAction">
                             <attribute id="InvestigationKind" type="uint8" value="1"/>
-                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_Polymorphed_fed9aa54-6ded-9769-f343-52313e5f877e"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_AnimalAttackedAnimal_11687f74-c7c2-eb34-4155-7a18109460a0"/>
                             <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_Flee"/>
                             <attribute id="Priority" type="int32" value="1100"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="BEAST"/>
@@ -22219,7 +22593,9 @@
                             </children>
                         </node>
                         <node id="CrimeAction">
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_Noticed_AnimalAttackedAnimal_11687f74-c7c2-eb34-4155-7a18109460a0"/>
                             <attribute id="InvestigationKind" type="uint8" value="9"/>
+                            <attribute id="NoticedAD" type="LSString" value="GEB_AD_Noticed_AnimalAttackedAnimal_11687f74-c7c2-eb34-4155-7a18109460a0"/>
                             <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_AttackWithOptionalAD"/>
                             <attribute id="Priority" type="int32" value="875"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="AGGRESSIVEBEAST"/>
@@ -25241,6 +25617,26 @@
                                 </node>
                             </children>
                         </node>
+                        <node id="CrimeAction">
+                            <attribute id="Parent" type="FixedString" value="HUMANOID"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="GIANT"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
                         <node id="Properties">
                             <children>
                                 <node id="Property">
@@ -26003,6 +26399,26 @@
                                 </node>
                             </children>
                         </node>
+                        <node id="CrimeAction">
+                            <attribute id="Parent" type="FixedString" value="MONSTER"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="GIANT"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
                         <node id="Properties">
                             <children>
                                 <node id="Property">
@@ -26486,6 +26902,26 @@
                         <node id="CrimeAction">
                             <attribute id="Parent" type="FixedString" value="MONSTER"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="BEAST"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="Parent" type="FixedString" value="MONSTER"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="GIANT"/>
                             <attribute id="Tension" type="uint8" value="0"/>
                             <children>
                                 <node id="TargetDialogueFlags">
@@ -27708,6 +28144,143 @@
                             <children>
                                 <node id="Tag">
                                     <attribute id="TagUUID" type="guid" value="e56e4df0-a4d7-480b-b69f-573c988b2f37"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <node id="Crime">
+                    <attribute id="CrimeType" type="LSString" value="KnockOut"/>
+                    <attribute id="Parent" type="FixedString" value="Assault"/>
+                    <attribute id="TensionWeight" type="int32" value="80"/>
+                </node>
+                <node id="Crime">
+                    <attribute id="Audible" type="uint8" value="0"/>
+                    <attribute id="CrimeType" type="LSString" value="DummyInvestigation"/>
+                    <attribute id="DetectionRange" type="float" value="1"/>
+                    <attribute id="Lifetime" type="float" value="7"/>
+                    <attribute id="MaxInvestigators" type="int32" value="1"/>
+                    <attribute id="TensionWeight" type="int32" value="10"/>
+                    <children>
+                        <node id="CrimeAction">
+                            <attribute id="InvestigationKind" type="uint8" value="6"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="GIANT"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_Noticed_Distraction_60d4ef31-3db9-263d-0358-90f86ee300a2"/>
+                            <attribute id="Parent" type="FixedString" value="GIANT"/>
+                            <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_PlayADBlocked"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="HUMANOID"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="Parent" type="FixedString" value="GIANT"/>
+                            <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_DoNothing"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="MONSTER"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="Dialog" type="LSString" value="GEB_AD_Noticed_AnimalAttackedAnimal_11687f74-c7c2-eb34-4155-7a18109460a0"/>
+                            <attribute id="Parent" type="FixedString" value="GIANT"/>
+                            <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_PlayADBlocked"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="BEAST"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="Parent" type="FixedString" value="GIANT"/>
+                            <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_DoNothing"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="CONSTRUCT"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Properties">
+                            <children>
+                                <node id="Property">
+                                    <attribute id="Properties" type="guid" value="db918cfb-a484-437c-93bb-8bc36fe98a9c"/>
+                                </node>
+                                <node id="Property">
+                                    <attribute id="Properties" type="guid" value="e305c93f-eaf2-4b73-ae0a-0be56a1b0549"/>
+                                </node>
+                                <node id="Property">
+                                    <attribute id="Properties" type="guid" value="c9797816-07bb-4865-b68c-08ebac6f905e"/>
+                                </node>
+                                <node id="Property">
+                                    <attribute id="Properties" type="guid" value="f18ff657-d522-448a-bcbf-866604ed6423"/>
                                 </node>
                             </children>
                         </node>

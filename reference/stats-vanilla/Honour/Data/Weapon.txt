@@ -1,7 +1,7 @@
 new entry "DEN_CapturedGoblin_MurderDagger"
 type "Weapon"
 using "DEN_CapturedGoblin_MurderDagger"
-data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical);IF(HasStatus('SLEEPING', context.Target) or HasStatus('SLEEP', context.Target) or HasStatus('KNOCKED_OUT', context.Target)):WeaponDamage(1d4, Necrotic)"
+data "DefaultBoosts" "WeaponEnchantment(1);WeaponProperty(Magical);IF(HasStatus('SLEEPING', context.Target) or HasStatus('SLEEP', context.Target) or HasStatus('SG_Sleeping_Magical', context.Target) or HasStatus('KNOCKED_OUT', context.Target)):WeaponDamage(1d4, Necrotic)"
 
 new entry "DEN_Apprentice_DaggerOfShar"
 type "Weapon"

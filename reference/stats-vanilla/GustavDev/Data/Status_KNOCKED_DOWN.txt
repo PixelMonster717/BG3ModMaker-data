@@ -38,3 +38,9 @@ using "UNCONSCIOUS"
 data "DisplayName" "h8899f219g1172g41f6g8f4dg10adcd5d1860;2"
 data "Description" "he08096acg9e42g4b0fgaedegd27c309c6ca2;3"
 
+new entry "LOW_SERIALKILLER_UNCONSCIOUS"
+type "StatusData"
+data "StatusType" "KNOCKED_DOWN"
+using "UNCONSCIOUS"
+data "Boosts" "AbilityFailedSavingThrow(Strength);AbilityFailedSavingThrow(Dexterity);CriticalHit(AttackTarget,Success,Always,3);DetectDisturbancesBlock(true);DialogueBlock();"
+

@@ -380,7 +380,6 @@ type "Weapon"
 using "WPN_Trident_Water_Myrmidon"
 data "RootTemplate" "639a6279-f487-4783-9381-493f63e66ade"
 data "DefaultBoosts" "WeaponDamage(1d6,Cold,Magical);WeaponEnchantment(3);WeaponProperty(Magical)"
-data "Boosts" "UnlockSpell(Target_FreezingStrike_Wildshape_Myrmidon_Water)"
 
 new entry "WPN_Warhammer_Azer"
 type "Weapon"

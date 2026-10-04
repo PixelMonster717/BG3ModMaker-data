@@ -57,7 +57,7 @@
 
 | 目录 | 内容 |
 |---|---|
-| `stats-vanilla\` | 5 个模块的 Stats 数据（115 文件 / 15895 条目 / 104834 行 data）。校验器用它做重名检测 |
+| `stats-vanilla\` | 8 个模块的 Stats 数据（167 文件 / 16593 条目 / 113184 行 data）。校验器用它做重名检测 |
 | `root-templates\` | 25914 个原版 RootTemplate 导出（Gustav / GustavDev / Shared / SharedDev） |
 | `sample-mods\` | 两个范例工程：`SHILI`（含 .pak，带作者手写注释）、`4Rogue`（含 .pak 与完整工程） |
 | `tutorials\` | 两份第三方中文教程（`.docx` / `.pdf` / `.pak`）、**教程文本版**（含 37 张图的 Markdown）、被动技能模板 |
