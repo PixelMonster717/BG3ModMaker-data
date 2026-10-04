@@ -57,6 +57,6 @@ SHILI\
 
 ## 相关
 
-- [[2-工作流/Stats语法与结构|Stats 语法与结构]]
-- [[2-工作流/Stats字段字典|Stats 字段字典]]
-- [[2-工作流/ScriptExtender实战配方|Script Extender 实战配方]]
+- ModMaker 仓库的 `2-工作流\Stats语法与结构.md`
+- ModMaker 仓库的 `2-工作流\Stats字段字典.md`
+- ModMaker 仓库的 `2-工作流\ScriptExtender实战配方.md`
