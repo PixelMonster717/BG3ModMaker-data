@@ -20,7 +20,7 @@
 
 > [!warning] 仓库名与本地目录名不一定相同
 > 例如 RogueSet 的 GitHub 仓库名是 `BG3-Mod-4RogueSet`，本地目录是 `RogueSet`。
-> 主库的脚本按**本地相对位置**引用本仓库（两者必须是同级目录），与仓库名无关。
+> 主库通过 config.local.json 的 dataRoot/divine 定位本仓库；可放在任意位置，与仓库名无关。
 
 ## 为什么单独一个仓库
 
@@ -41,7 +41,6 @@
 | 目录 | 用途 |
 |---|---|
 | `lslib-1.20.4\` | `ConverterApp.exe`（GUI）、`Tools\divine.exe`（**命令行打包器**） |
-| `lslib-1.20.4\` | 旧版，回退用。产出与 1.18.5 **字节完全相同** |
 | `modders-multitool\` | `bg3-modders-multitool_CHS.exe` / `_ENG.exe`：批量解包、索引、GameObject 浏览 |
 | `modders-multitool-v0.10.0\` | 另一版本 |
 | `data-query\` | `BaldursGate3Query-0.14.2-chenstack.exe`：按条目名查原版数据 |
@@ -57,7 +56,7 @@
 
 | 目录 | 内容 |
 |---|---|
-| `stats-vanilla\` | 8 个模块的 Stats 数据（167 文件 / 16593 条目 / 113184 行 data）。校验器用它做重名检测 |
+| `stats-vanilla\` | 8 个模块的 Stats 数据（157 个 Stats 文本文件 / 16593 条目 / 113184 行 data）。校验器用它做重名检测 |
 | `root-templates\` | 25914 个原版 RootTemplate 导出（Gustav / GustavDev / Shared / SharedDev） |
 | `sample-mods\` | 两个范例工程：`SHILI`（含 .pak，带作者手写注释）、`4Rogue`（含 .pak 与完整工程） |
 | `tutorials\` | 两份第三方中文教程（`.docx` / `.pdf` / `.pak`）、**教程文本版**（含 37 张图的 Markdown）、被动技能模板 |
@@ -83,25 +82,21 @@
 
 > [!note] 教程是第三方所写
 > 写于较早版本，部分内容与当前实测不符。
-> 遇到冲突以主库的 `2-工作流\Stats语法与结构.md` 与 `Stats字段字典.md` 为准。
+> 遇到冲突核对原版/官方文档和有版本的实测；主库的历史笔记也可能过时，参见 `2-工作流/证据与实测.md`。
 
-> [!note] `stats-vanilla` 的来源与更新
-> 原为 2024-11/-12 从游戏 pak 抽出，早于 Patch 8。
-> **现已改用 `scripts\extract-vanilla-stats.ps1` 从当前版本 pak 重新抽取**
-> （`Data\Shared.pak` 等，路径 `Public\<模块>\Stats\Generated\Data\*.txt`）。
->
-> 更新方法：
-> ```powershell
-> powershell -File <ModMaker>\scripts\extract-vanilla-stats.ps1
-> ```
-> 脚本整包解包后只搬运 Stats 文件，不碰几十 GB 的贴图与模型。
+> [!note] 快照与更新
+> 本次仅核对本地数据，没有重新提取游戏数据。可追溯摘要见 `sources.json`。
+> 游戏版本和提取历史以先前记录为来源，不把本次目录扫描日期当成提取日期。
+> 更新时用 Divine 将指定游戏包解到新的临时目录，按模块整理 Stats，比较差异后再替换快照。
+> 旧 extract-vanilla-stats.ps1 已归档为历史脚本，不作为当前直接执行入口。
+> 具体步骤见工具仓库 `2-工作流/原版数据参考.md`。
 
 ## 游戏本体里的另两份数据（不在本仓库，但要知道）
 
 | 位置 | 内容 | 与本文档的关系 |
 |---|---|---|
 | `<游戏>\Data\Editor\Mods\*\Stats\*.stats` | **编辑器的字段定义表**：每种类型有哪些字段、类型是什么。例如 `Weapon.stats` 定义了 Weapon 的 41 个字段 | 与 `stats-vanilla` **互补**——前者说「有哪些字段」，后者说「有哪些物品」。来自 Steam 上的官方 Toolkit Data（DLC） |
-| `<游戏>\Data\*.pak` | **运行时数据**：真正的 `new entry` 物品数据 | `stats-vanilla` 就是从这些 pak 抽出来的。游戏更新后用 `extract-vanilla-stats.ps1` 重抽 |
+| `<游戏>\Data\*.pak` | **运行时数据**：真正的 `new entry` 物品数据 | `stats-vanilla` 就是从这些 pak 抽出来的。游戏更新后按快照更新流程重新提取并记录版本 |
 | `<游戏>\Data\Public\Shared\GUI\Icons_Items*.lsx` | **图标定义**（7 个分片） | 做自定义图标时查 |
 
 > [!warning] 别把 `.stats` 当成物品数据
@@ -117,13 +112,6 @@
 
 ## 如何配合主库使用
 
-两个仓库应为**同级目录**：
-
-```text
-D:\Administrator\Documents\
-├─ BG3ModMaker\            主库
-└─ BG3ModMaker-data\       本仓库
-```
-
-主库的脚本按此相对位置引用 `tools\` 与 `reference\`。
-完整的恢复步骤、环境事实与踩坑速查见主库根目录的 **`恢复说明.md`**。
+工具仓库 config.local.json 的 dataRoot 指向本仓库，divine 指向所用 Divine.exe。
+仓库不必同级。查询命令为 `bg3.cmd query field/entry/icon <名称>`（在工具仓库执行）。
+工具不会自动更新本仓库资料。共享流程见 BG3ModMaker/2-工作流/工程约定.md。
