@@ -1,5 +1,11 @@
 # BG3ModMaker-data
 
+> [!tip] 这是独立的 Obsidian Vault
+> **用 Obsidian 打开本目录即可**（`.obsidian` 已配好，忽略了大目录以免拖慢索引）。
+>
+> **先读 `指南.md`** —— 按需求列出每个入口：要查什么、该去哪里、用哪条命令。
+> 两个仓库的分工判据：**「怎么用工具」去 ModMaker；「游戏里有什么」来 data**。
+
 **BG3 Mod 制作工具链与原版参考数据。**
 
 ## 姊妹仓库
@@ -78,9 +84,30 @@
 > 写于较早版本，部分内容与当前实测不符。
 > 遇到冲突以主库的 `2-工作流\Stats语法与结构.md` 与 `Stats字段字典.md` 为准。
 
-> [!warning] `stats-vanilla` 可能已过时
-> 时间戳为 2024-11/-12，早于当前 Patch 8 + HotFix 10。
-> 查「条目是否存在」可靠，查具体数值需留意。详见主库「原版数据参考」。
+> [!note] `stats-vanilla` 的来源与更新
+> 原为 2024-11/-12 从游戏 pak 抽出，早于 Patch 8。
+> **现已改用 `scripts\extract-vanilla-stats.ps1` 从当前版本 pak 重新抽取**
+> （`Data\Shared.pak` 等，路径 `Public\<模块>\Stats\Generated\Data\*.txt`）。
+>
+> 更新方法：
+> ```powershell
+> powershell -File <ModMaker>\scripts\extract-vanilla-stats.ps1
+> ```
+> 脚本整包解包后只搬运 Stats 文件，不碰几十 GB 的贴图与模型。
+
+## 游戏本体里的另两份数据（不在本仓库，但要知道）
+
+| 位置 | 内容 | 与本文档的关系 |
+|---|---|---|
+| `<游戏>\Data\Editor\Mods\*\Stats\*.stats` | **编辑器的字段定义表**：每种类型有哪些字段、类型是什么。例如 `Weapon.stats` 定义了 Weapon 的 41 个字段 | 与 `stats-vanilla` **互补**——前者说「有哪些字段」，后者说「有哪些物品」。来自 Steam 上的官方 Toolkit Data（DLC） |
+| `<游戏>\Data\*.pak` | **运行时数据**：真正的 `new entry` 物品数据 | `stats-vanilla` 就是从这些 pak 抽出来的。游戏更新后用 `extract-vanilla-stats.ps1` 重抽 |
+| `<游戏>\Data\Public\Shared\GUI\Icons_Items*.lsx` | **图标定义**（7 个分片） | 做自定义图标时查 |
+
+> [!warning] 别把 `.stats` 当成物品数据
+> `Data\Editor\Mods\*\Stats\*.stats` 是 XML 格式的**字段定义**，不是运行时的
+> `new entry` 语法。最初我误以为它能直接替换 `stats-vanilla`，实测后确认两者
+> 性质不同：它定义「字段有哪些」，**不含具体物品**。
+> 但它对查「这个类型支持哪些字段」极有价值——比从数据反推字段表可靠得多。
 
 ## 版本注意
 

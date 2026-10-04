@@ -1,0 +1,6 @@
+{
+  "userIgnoreFilters": [
+    "reference/root-templates/",
+    "tools/"
+  ]
+}
