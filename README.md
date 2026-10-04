@@ -62,6 +62,7 @@
 | `sample-mods\` | 两个范例工程：`SHILI`（含 .pak，带作者手写注释）、`4Rogue`（含 .pak 与完整工程） |
 | `tutorials\` | 两份第三方中文教程（`.docx` / `.pdf` / `.pak`）、**教程文本版**（含 37 张图的 Markdown）、被动技能模板 |
 | `equipment-list\` | 作者整理的**原版装备数据库**（12 类约 680 条，Markdown）。分类：头冠与头盔 55 / 披风 18 / 护甲与服装 76 / 手套 77 / 靴子 39 / 盾牌 29 / 项链 62 / 戒指 66 / 近战武器 195 / 远程武器 25 / 异常状态 29 / 输出与附加伤害 54 |
+| `bg3se-docs\` | **Script Extender 官方文档**（6 文件）。`API.md` 是 Lua API v30 完整参考，81 KB。写 SE 代码前先查这里 |
 | `exports\` | `UNI_HUM_ShadowBlade.lsf` / `.lsx` |
 
 **关于 `sample-mods\`**：两个范例都带 `.pak`，可直接解包对照。
