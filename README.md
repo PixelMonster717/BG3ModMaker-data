@@ -40,8 +40,8 @@
 
 | 目录 | 用途 |
 |---|---|
-| `lslib-1.18.5\` | `ConverterApp.exe`（GUI）、`Tools\divine.exe`（**命令行打包器**） |
-| `lslib-1.18.4\` | 旧版，回退用。产出与 1.18.5 **字节完全相同** |
+| `lslib-1.20.4\` | `ConverterApp.exe`（GUI）、`Tools\divine.exe`（**命令行打包器**） |
+| `lslib-1.20.4\` | 旧版，回退用。产出与 1.18.5 **字节完全相同** |
 | `modders-multitool\` | `bg3-modders-multitool_CHS.exe` / `_ENG.exe`：批量解包、索引、GameObject 浏览 |
 | `modders-multitool-v0.10.0\` | 另一版本 |
 | `data-query\` | `BaldursGate3Query-0.14.2-chenstack.exe`：按条目名查原版数据 |
