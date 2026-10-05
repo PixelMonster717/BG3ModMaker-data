@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "reference/larian-docs/制作基础法术.md",
+                "file": "指南.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "制作基础法术"
+              "title": "指南"
             }
           }
         ]
@@ -190,6 +190,10 @@
   },
   "active": "37970e2759524bbe",
   "lastOpenFiles": [
+    "AGENTS.md",
+    "README.md",
+    "指南.md",
+    "reference/larian-docs/制作基础法术.md",
     "reference/larian-docs/添加技能与物品图标.md",
     "reference/larian-docs/添加护甲.md",
     "reference/larian-docs/入门-新建mod.md",
@@ -211,10 +215,6 @@
     "reference/bg3-schema/stats/formats/ItemCombos.md",
     "reference/bg3-schema/stats/formats/SpellSet.md",
     "reference/bg3-schema/regions/AbilityDistributionPresets/AbilityDistributionPreset.md",
-    "reference/bg3-schema/regions/AbilityDistributionPresets/_REGION.md",
-    "reference/bg3-schema/content-banks/VirtualTextureBank/_REGION.md",
-    "reference/bg3-schema/content-banks/README.md",
-    "reference/bg3-schema/content-banks/AnimationBlueprintBank/_REGION.md",
-    "reference/bg3-schema/content-banks/AnimationBank/Resource.md"
+    "reference/bg3-schema/regions/AbilityDistributionPresets/_REGION.md"
   ]
 }
